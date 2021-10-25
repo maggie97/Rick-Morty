@@ -14,6 +14,7 @@
 		4DA7380027260379009F8629 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA737FF27260379009F8629 /* APIHelper.swift */; };
 		4DA73803272632AA009F8629 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA73802272632AA009F8629 /* Status.swift */; };
 		4DA73805272632D6009F8629 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA73804272632D6009F8629 /* Character.swift */; };
+		4DA738072726409C009F8629 /* ApiURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA738062726409B009F8629 /* ApiURL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4DA7380127261212009F8629 /* testAPI .playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "testAPI .playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4DA73802272632AA009F8629 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		4DA73804272632D6009F8629 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		4DA738062726409B009F8629 /* ApiURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiURL.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				4DA737FF27260379009F8629 /* APIHelper.swift */,
 				4DA7380127261212009F8629 /* testAPI .playground */,
 				4DA73802272632AA009F8629 /* Status.swift */,
+				4DA738062726409B009F8629 /* ApiURL.swift */,
 			);
 			path = "Ricky&Morty";
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DA738072726409C009F8629 /* ApiURL.swift in Sources */,
 				4DA7380027260379009F8629 /* APIHelper.swift in Sources */,
 				4DA73803272632AA009F8629 /* Status.swift in Sources */,
 				4DA73805272632D6009F8629 /* Character.swift in Sources */,

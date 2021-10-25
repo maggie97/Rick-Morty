@@ -24,7 +24,7 @@ public enum APIHelper{
         let request = URLRequest(url: url)
         print(request)
         
-        URLSession.shared.dataTask(with: request) { opData, _, opError in
+        URLSession.shared.dataTask(with: request) { opData, opResponse, opError in
             if let error = opError {
                 complation(.failure(.error("URL Error = \(error.localizedDescription)")))
             }

@@ -6,7 +6,19 @@
 //
 
 import Foundation
+import SwiftUI
 
-enum Status {
-    case alive, dead, unknow
+enum Status: String, Codable {
+    case Alive, Dead, Unknow
+    
+    func getColor() -> Color{
+        switch self{
+        case .Alive:
+            return Color.green
+        case .Dead:
+            return Color.red
+        case .Unknow:
+            return Color.black
+        }
+    }
 }
