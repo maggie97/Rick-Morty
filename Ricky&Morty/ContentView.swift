@@ -12,15 +12,18 @@ struct ContentView: View {
     @State var results: CharacterList = CharacterList(results: [Character]())
     
     var body: some View {
-        List(results.results, id:\.id){ item in
-            HStack{
-                Rectangle().fill(Color.red).frame(width: 100, height: 100, alignment: .leading)
-                VStack{
-                    Text(item.name)
+        NavigationView {
+            List(results.results, id:\.id){ item in
+                HStack{
+                    Rectangle().fill(Color.red).frame(width: 100, height: 100, alignment: .leading)
+                    VStack{
+                        Text(item.name)
+                    }
                 }
-            }
-        }.onAppear(perform: loadData)
-            .navigationTitle("Rick and Morty")
+            }.onAppear(perform: loadData)
+                .navigationTitle("RickAndMorty")
+                .navigationBarTitleDisplayMode(.automatic)
+        }
         
     }
     
