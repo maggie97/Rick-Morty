@@ -11,6 +11,11 @@
 		4DA737F22725ED2C009F8629 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA737F12725ED2C009F8629 /* ContentView.swift */; };
 		4DA737F42725ED2E009F8629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DA737F32725ED2E009F8629 /* Assets.xcassets */; };
 		4DA737F72725ED2E009F8629 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DA737F62725ED2E009F8629 /* Preview Assets.xcassets */; };
+		4DA7380027260379009F8629 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA737FF27260379009F8629 /* APIHelper.swift */; };
+		4DA73803272632AA009F8629 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA73802272632AA009F8629 /* Status.swift */; };
+		4DA73805272632D6009F8629 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA73804272632D6009F8629 /* Character.swift */; };
+		4DA738072726409C009F8629 /* ApiURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA738062726409B009F8629 /* ApiURL.swift */; };
+		4DA7380927270353009F8629 /* CharacterDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA7380827270353009F8629 /* CharacterDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,12 @@
 		4DA737F12725ED2C009F8629 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4DA737F32725ED2E009F8629 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DA737F62725ED2E009F8629 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4DA737FF27260379009F8629 /* APIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
+		4DA7380127261212009F8629 /* testAPI .playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "testAPI .playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		4DA73802272632AA009F8629 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		4DA73804272632D6009F8629 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		4DA738062726409B009F8629 /* ApiURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiURL.swift; sourceTree = "<group>"; };
+		4DA7380827270353009F8629 /* CharacterDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +64,14 @@
 			children = (
 				4DA737EF2725ED2C009F8629 /* Ricky_MortyApp.swift */,
 				4DA737F12725ED2C009F8629 /* ContentView.swift */,
+				4DA73804272632D6009F8629 /* Character.swift */,
+				4DA7380827270353009F8629 /* CharacterDetails.swift */,
 				4DA737F32725ED2E009F8629 /* Assets.xcassets */,
 				4DA737F52725ED2E009F8629 /* Preview Content */,
+				4DA737FF27260379009F8629 /* APIHelper.swift */,
+				4DA7380127261212009F8629 /* testAPI .playground */,
+				4DA73802272632AA009F8629 /* Status.swift */,
+				4DA738062726409B009F8629 /* ApiURL.swift */,
 			);
 			path = "Ricky&Morty";
 			sourceTree = "<group>";
@@ -137,6 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DA7380927270353009F8629 /* CharacterDetails.swift in Sources */,
+				4DA738072726409C009F8629 /* ApiURL.swift in Sources */,
+				4DA7380027260379009F8629 /* APIHelper.swift in Sources */,
+				4DA73803272632AA009F8629 /* Status.swift in Sources */,
+				4DA73805272632D6009F8629 /* Character.swift in Sources */,
 				4DA737F22725ED2C009F8629 /* ContentView.swift in Sources */,
 				4DA737F02725ED2C009F8629 /* Ricky_MortyApp.swift in Sources */,
 			);
