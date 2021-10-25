@@ -15,28 +15,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List(results, id:\.id){ item in
-                HStack{
-                    if #available(iOS 15.0, *) {
-                        AsyncImage(url: item.image, scale: 3).frame(minWidth: 50, idealWidth: 90, maxWidth: 100, minHeight: 50, idealHeight: 90, maxHeight: 100, alignment: .center)
-                    } else {
-                        Rectangle().fill(Color.red).frame(width: 100, height: 100, alignment: .leading)
-                    }
-
-                    VStack(alignment: .leading){
-                        Text(item.name)
-                        HStack{
-                            Circle().fill(Status(rawValue: item.status)?.getColor() ?? Color.black ).frame(width: 10, height: 10).padding(0)
-                                
-                            Text(item.status)
-                                .multilineTextAlignment(.leading)
-                                .padding(0)
-                        }.padding(0)
-                        
-                        Text("Last Know location")
-                        Text(item.location.name)
-                        
-                    }.padding(0)
-                }.padding(0)
+                CharacterItemList(item: item)
                     
             }.onAppear(perform: loadData)
             .navigationTitle("Rick and Morty")
@@ -87,5 +66,45 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    
+    }
+}
+
+struct CharacterItemList: View{
+    @State var item: Character
+    var body: some View {
+        NavigationLink(destination: CharacterDetails(itemCharacter: item)) {
+            HStack{
+                if #available(iOS 15.0, *) {
+                    AsyncImage(url: item.image, scale: 3).frame(minWidth: 50, idealWidth: 90, maxWidth: 100, minHeight: 50, idealHeight: 90, maxHeight: 100, alignment: .center)
+                } else {
+                    Rectangle().fill(Color.red).frame(width: 100, height: 100, alignment: .leading)
+                }
+
+                VStack(alignment: .leading){
+                    Text(item.name)
+                        .fontWeight(.black).padding(0)
+                    HStack{
+                        Circle()
+                            .fill(Status(rawValue: item.status)?.getColor() ?? Color.black )
+                            .frame(width: 8, height: 8)
+                            .padding(0)
+                            
+                        Text(item.status)
+                            .fontWeight(.light)
+                            .font(.system(size: 12))
+                            .multilineTextAlignment(.leading)
+                            .padding(0)
+                    }
+                    .padding(0.0)
+                    
+                    Text("Last Know location").foregroundColor(Color.gray)
+                        .font(.system(size: 16))
+                    Text(item.location.name).font(.system(size: 12))
+                    
+                }.padding(0)
+            }.padding(0)
+        }
+        
     }
 }
