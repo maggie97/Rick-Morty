@@ -11,7 +11,6 @@ struct CharacterDetails: View {
     let itemCharacter: Character
     @State var firstEpisode: Episode?
     var body: some View {
-        NavigationView{
             
             List{
                 if #available(iOS 15.0, *) {
@@ -59,7 +58,7 @@ struct CharacterDetails: View {
                 }
                 
             }.onAppear(perform: loadEpisode)
-        }.navigationTitle(itemCharacter.name)
+            .navigationTitle(itemCharacter.name)
             .navigationBarTitleDisplayMode(.large)
     }
     
